@@ -1,1 +1,831 @@
-var _0x2769=["\x6C\x65\x6E\x67\x74\x68","\x6F\x6E\x49\x6E\x69\x74","\x66\x69\x65\x6C\x64\x73","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x6F\x6E\x4F\x70\x65\x6E","\x6F\x6E\x53\x61\x76\x65","\x6F\x6E\x43\x6C\x6F\x73\x65","\x6F\x6E\x52\x65\x73\x65\x74","\x69\x73\x4F\x70\x65\x6E","\x74\x69\x74\x6C\x65","\x55\x73\x65\x72\x20\x53\x63\x72\x69\x70\x74\x20\x53\x65\x74\x74\x69\x6E\x67\x73","\x63\x73\x73","\x0A","\x6A\x6F\x69\x6E","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2A\x20\x7B\x20\x66\x6F\x6E\x74\x2D\x66\x61\x6D\x69\x6C\x79\x3A\x20\x61\x72\x69\x61\x6C\x2C\x74\x61\x68\x6F\x6D\x61\x2C\x6D\x79\x72\x69\x61\x64\x20\x70\x72\x6F\x2C\x73\x61\x6E\x73\x2D\x73\x65\x72\x69\x66\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x7B\x20\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x3A\x20\x23\x46\x46\x46\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x69\x6E\x70\x75\x74\x5B\x74\x79\x70\x65\x3D\x27\x72\x61\x64\x69\x6F\x27\x5D\x20\x7B\x20\x6D\x61\x72\x67\x69\x6E\x2D\x72\x69\x67\x68\x74\x3A\x20\x38\x70\x78\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x69\x6E\x64\x65\x6E\x74\x34\x30\x20\x7B\x20\x6D\x61\x72\x67\x69\x6E\x2D\x6C\x65\x66\x74\x3A\x20\x34\x30\x25\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x66\x69\x65\x6C\x64\x5F\x6C\x61\x62\x65\x6C\x20\x7B\x20\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x20\x31\x32\x70\x78\x3B\x20\x66\x6F\x6E\x74\x2D\x77\x65\x69\x67\x68\x74\x3A\x20\x62\x6F\x6C\x64\x3B\x20\x6D\x61\x72\x67\x69\x6E\x2D\x72\x69\x67\x68\x74\x3A\x20\x36\x70\x78\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x72\x61\x64\x69\x6F\x5F\x6C\x61\x62\x65\x6C\x20\x7B\x20\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x20\x31\x32\x70\x78\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x62\x6C\x6F\x63\x6B\x20\x7B\x20\x64\x69\x73\x70\x6C\x61\x79\x3A\x20\x62\x6C\x6F\x63\x6B\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x73\x61\x76\x65\x63\x6C\x6F\x73\x65\x5F\x62\x75\x74\x74\x6F\x6E\x73\x20\x7B\x20\x6D\x61\x72\x67\x69\x6E\x3A\x20\x31\x36\x70\x78\x20\x31\x30\x70\x78\x20\x31\x30\x70\x78\x3B\x20\x70\x61\x64\x64\x69\x6E\x67\x3A\x20\x32\x70\x78\x20\x31\x32\x70\x78\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x72\x65\x73\x65\x74\x2C\x20\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x72\x65\x73\x65\x74\x20\x61\x2C","\x20\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x5F\x62\x75\x74\x74\x6F\x6E\x73\x5F\x68\x6F\x6C\x64\x65\x72\x20\x7B\x20\x63\x6F\x6C\x6F\x72\x3A\x20\x23\x30\x30\x30\x3B\x20\x74\x65\x78\x74\x2D\x61\x6C\x69\x67\x6E\x3A\x20\x72\x69\x67\x68\x74\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x63\x6F\x6E\x66\x69\x67\x5F\x68\x65\x61\x64\x65\x72\x20\x7B\x20\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x20\x32\x30\x70\x74\x3B\x20\x6D\x61\x72\x67\x69\x6E\x3A\x20\x30\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x63\x6F\x6E\x66\x69\x67\x5F\x64\x65\x73\x63\x2C\x20\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x73\x65\x63\x74\x69\x6F\x6E\x5F\x64\x65\x73\x63\x2C\x20\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x72\x65\x73\x65\x74\x20\x7B\x20\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x20\x39\x70\x74\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x63\x65\x6E\x74\x65\x72\x20\x7B\x20\x74\x65\x78\x74\x2D\x61\x6C\x69\x67\x6E\x3A\x20\x63\x65\x6E\x74\x65\x72\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x73\x65\x63\x74\x69\x6F\x6E\x5F\x68\x65\x61\x64\x65\x72\x5F\x68\x6F\x6C\x64\x65\x72\x20\x7B\x20\x6D\x61\x72\x67\x69\x6E\x2D\x74\x6F\x70\x3A\x20\x38\x70\x78\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x63\x6F\x6E\x66\x69\x67\x5F\x76\x61\x72\x20\x7B\x20\x6D\x61\x72\x67\x69\x6E\x3A\x20\x30\x20\x30\x20\x34\x70\x78\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x73\x65\x63\x74\x69\x6F\x6E\x5F\x68\x65\x61\x64\x65\x72\x20\x7B\x20\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x3A\x20\x23\x34\x31\x34\x31\x34\x31\x3B\x20\x62\x6F\x72\x64\x65\x72\x3A\x20\x31\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x23\x30\x30\x30\x3B\x20\x63\x6F\x6C\x6F\x72\x3A\x20\x23\x46\x46\x46\x3B","\x20\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x20\x31\x33\x70\x74\x3B\x20\x6D\x61\x72\x67\x69\x6E\x3A\x20\x30\x3B\x20\x7D","\x23\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x2E\x73\x65\x63\x74\x69\x6F\x6E\x5F\x64\x65\x73\x63\x20\x7B\x20\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x3A\x20\x23\x45\x46\x45\x46\x45\x46\x3B\x20\x62\x6F\x72\x64\x65\x72\x3A\x20\x31\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x23\x43\x43\x43\x3B\x20\x63\x6F\x6C\x6F\x72\x3A\x20\x23\x35\x37\x35\x37\x35\x37\x3B","\x20\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x20\x39\x70\x74\x3B\x20\x6D\x61\x72\x67\x69\x6E\x3A\x20\x30\x20\x30\x20\x36\x70\x78\x3B\x20\x7D","\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67","","\x69\x64","\x73\x74\x72\x69\x6E\x67","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x66\x75\x6E\x63\x74\x69\x6F\x6E","\x66\x72\x61\x6D\x65","\x65\x76\x65\x6E\x74\x73","\x6F\x62\x6A\x65\x63\x74","\x74\x65\x73\x74","\x73\x74\x79\x6C\x69\x73\x68","\x6F\x6E","\x74\x6F\x55\x70\x70\x65\x72\x43\x61\x73\x65","\x63\x68\x61\x72\x41\x74","\x73\x6C\x69\x63\x65","\x72\x65\x61\x64","\x74\x79\x70\x65\x73","\x74\x79\x70\x65","\x62\x61\x73\x69\x63\x50\x72\x65\x66\x69\x78","\x62\x61\x73\x69\x63","\x23","\x67\x6D","\x72\x65\x70\x6C\x61\x63\x65","\x70\x72\x6F\x74\x6F\x74\x79\x70\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x74\x61\x67\x4E\x61\x6D\x65","\x49\x46\x52\x41\x4D\x45","\x63\x68\x69\x6C\x64\x4E\x6F\x64\x65\x73","\x63\x72\x65\x61\x74\x65","\x64\x69\x76","\x5F\x77\x72\x61\x70\x70\x65\x72","\x73\x74\x79\x6C\x65","\x74\x65\x78\x74\x2F\x63\x73\x73","\x5F\x68\x65\x61\x64\x65\x72","\x63\x6F\x6E\x66\x69\x67\x5F\x68\x65\x61\x64\x65\x72\x20\x62\x6C\x6F\x63\x6B\x20\x63\x65\x6E\x74\x65\x72","\x73\x65\x74\x74\x69\x6E\x67\x73","\x73\x65\x63\x74\x69\x6F\x6E","\x73\x65\x63\x74\x69\x6F\x6E\x5F\x68\x65\x61\x64\x65\x72\x5F\x68\x6F\x6C\x64\x65\x72","\x5F\x73\x65\x63\x74\x69\x6F\x6E\x5F","\x63\x61\x6C\x6C","\x74\x6F\x53\x74\x72\x69\x6E\x67","\x5B\x6F\x62\x6A\x65\x63\x74\x20\x41\x72\x72\x61\x79\x5D","\x73\x65\x63\x74\x69\x6F\x6E\x5F\x68\x65\x61\x64\x65\x72\x20\x63\x65\x6E\x74\x65\x72","\x5F\x73\x65\x63\x74\x69\x6F\x6E\x5F\x68\x65\x61\x64\x65\x72\x5F","\x70","\x73\x65\x63\x74\x69\x6F\x6E\x5F\x64\x65\x73\x63\x20\x63\x65\x6E\x74\x65\x72","\x5F\x73\x65\x63\x74\x69\x6F\x6E\x5F\x64\x65\x73\x63\x5F","\x77\x72\x61\x70\x70\x65\x72","\x74\x6F\x4E\x6F\x64\x65","\x5F\x62\x75\x74\x74\x6F\x6E\x73\x5F\x68\x6F\x6C\x64\x65\x72","\x62\x75\x74\x74\x6F\x6E","\x5F\x73\x61\x76\x65\x42\x74\x6E","\x53\x61\x76\x65","\x53\x61\x76\x65\x20\x73\x65\x74\x74\x69\x6E\x67\x73","\x73\x61\x76\x65\x63\x6C\x6F\x73\x65\x5F\x62\x75\x74\x74\x6F\x6E\x73","\x73\x61\x76\x65","\x5F\x63\x6C\x6F\x73\x65\x42\x74\x6E","\x43\x6C\x6F\x73\x65","\x43\x6C\x6F\x73\x65\x20\x77\x69\x6E\x64\x6F\x77","\x63\x6C\x6F\x73\x65","\x5F\x72\x65\x73\x65\x74\x4C\x69\x6E\x6B","\x44\x65\x66\x61\x75\x6C\x74\x73","\x52\x65\x73\x65\x74\x20\x66\x69\x65\x6C\x64\x73\x20\x74\x6F\x20\x64\x65\x66\x61\x75\x6C\x74\x20\x76\x61\x6C\x75\x65\x73","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x72\x65\x73\x65\x74","\x63\x65\x6E\x74\x65\x72","\x72\x65\x73\x69\x7A\x65","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x63\x6F\x6E\x74\x65\x6E\x74\x44\x6F\x63\x75\x6D\x65\x6E\x74","\x6F\x77\x6E\x65\x72\x44\x6F\x63\x75\x6D\x65\x6E\x74","\x63\x6F\x6E\x74\x65\x6E\x74\x57\x69\x6E\x64\x6F\x77","\x62\x65\x66\x6F\x72\x65\x75\x6E\x6C\x6F\x61\x64","\x64\x69\x73\x70\x6C\x61\x79","\x62\x6C\x6F\x63\x6B","\x62\x6F\x74\x74\x6F\x6D\x3A\x20\x61\x75\x74\x6F\x3B\x20\x62\x6F\x72\x64\x65\x72\x3A\x20\x31\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x23\x30\x30\x30\x3B\x20\x64\x69\x73\x70\x6C\x61\x79\x3A\x20\x6E\x6F\x6E\x65\x3B\x20\x68\x65\x69\x67\x68\x74\x3A\x20\x37\x35\x25\x3B","\x20\x6C\x65\x66\x74\x3A\x20\x30\x3B\x20\x6D\x61\x72\x67\x69\x6E\x3A\x20\x30\x3B\x20\x6D\x61\x78\x2D\x68\x65\x69\x67\x68\x74\x3A\x20\x38\x30\x25\x3B\x20\x6D\x61\x78\x2D\x77\x69\x64\x74\x68\x3A\x20\x35\x30\x25\x3B\x20\x6F\x70\x61\x63\x69\x74\x79\x3A\x20\x30\x3B","\x20\x6F\x76\x65\x72\x66\x6C\x6F\x77\x3A\x20\x39\x30\x25\x3B\x20\x70\x61\x64\x64\x69\x6E\x67\x3A\x20\x30\x3B\x20\x70\x6F\x73\x69\x74\x69\x6F\x6E\x3A\x20\x66\x69\x78\x65\x64\x3B\x20\x72\x69\x67\x68\x74\x3A\x20\x61\x75\x74\x6F\x3B\x20\x74\x6F\x70\x3A\x20\x30\x3B","\x20\x77\x69\x64\x74\x68\x3A\x20\x37\x35\x25\x3B\x20\x7A\x2D\x69\x6E\x64\x65\x78\x3A\x20\x39\x39\x39\x39\x3B\x20\x62\x6F\x72\x64\x65\x72\x2D\x72\x61\x64\x69\x75\x73\x3A\x20\x33\x70\x78\x3B","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x68\x65\x61\x64","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65","\x69\x66\x72\x61\x6D\x65","\x62\x6F\x64\x79","\x73\x72\x63","\x61\x62\x6F\x75\x74\x3A\x62\x6C\x61\x6E\x6B","\x6C\x6F\x61\x64","\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x66\x61\x69\x6C\x65\x64\x20\x74\x6F\x20\x69\x6E\x69\x74\x69\x61\x6C\x69\x7A\x65\x20\x64\x65\x66\x61\x75\x6C\x74\x20\x73\x65\x74\x74\x69\x6E\x67\x73\x20\x64\x69\x61\x6C\x6F\x67\x20\x6E\x6F\x64\x65\x21","\x6C\x6F\x67","\x77\x72\x69\x74\x65","\x72\x65\x6D\x6F\x76\x65","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x6E\x6F\x6E\x65","\x6E\x6F\x64\x65","\x76\x61\x6C\x75\x65","\x72\x65\x6C\x6F\x61\x64","\x74\x6F\x56\x61\x6C\x75\x65","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x73\x65\x74\x56\x61\x6C\x75\x65","\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x66\x61\x69\x6C\x65\x64\x20\x74\x6F\x20\x73\x61\x76\x65\x20\x73\x65\x74\x74\x69\x6E\x67\x73\x21","\x7B\x7D","\x67\x65\x74\x56\x61\x6C\x75\x65","\x70\x61\x72\x73\x65\x72","\x47\x4D\x5F\x63\x6F\x6E\x66\x69\x67\x20\x66\x61\x69\x6C\x65\x64\x20\x74\x6F\x20\x72\x65\x61\x64\x20\x73\x61\x76\x65\x64\x20\x73\x65\x74\x74\x69\x6E\x67\x73\x21","\x63\x72\x65\x61\x74\x65\x54\x65\x78\x74\x4E\x6F\x64\x65","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x69\x6E\x64\x65\x78\x4F\x66","\x73\x75\x62\x73\x74\x72\x69\x6E\x67","\x2C","\x74\x6F\x4C\x6F\x77\x65\x72\x43\x61\x73\x65","\x2C\x73\x74\x79\x6C\x65\x2C\x61\x63\x63\x65\x73\x73\x6B\x65\x79\x2C\x69\x64\x2C\x6E\x61\x6D\x65\x2C\x73\x72\x63\x2C\x68\x72\x65\x66\x2C\x77\x68\x69\x63\x68\x2C\x66\x6F\x72","\x6F\x70\x61\x63\x69\x74\x79","\x30","\x74\x6F\x70","\x69\x6E\x6E\x65\x72\x48\x65\x69\x67\x68\x74","\x6F\x66\x66\x73\x65\x74\x48\x65\x69\x67\x68\x74","\x66\x6C\x6F\x6F\x72","\x70\x78","\x6C\x65\x66\x74","\x69\x6E\x6E\x65\x72\x57\x69\x64\x74\x68","\x6F\x66\x66\x73\x65\x74\x57\x69\x64\x74\x68","\x31","\x70\x61\x72\x65\x6E\x74\x4E\x6F\x64\x65","\x72\x65\x6D\x6F\x76\x65\x43\x68\x69\x6C\x64","\x61","\x62","\x73\x65\x74\x49\x74\x65\x6D","\x67\x65\x74\x49\x74\x65\x6D","\x70\x61\x72\x73\x65","\x74\x6F\x53\x6F\x75\x72\x63\x65","\x72\x65\x74\x75\x72\x6E\x20","\x3B","\x69\x73\x47\x4D","\x63\x6F\x6E\x73\x6F\x6C\x65","\x6F\x70\x65\x72\x61","\x70\x6F\x73\x74\x45\x72\x72\x6F\x72","\x75\x6E\x73\x69\x67\x6E\x65\x64\x20","\x72\x61\x64\x69\x6F","\x73\x65\x6C\x65\x63\x74","\x63\x68\x65\x63\x6B\x62\x6F\x78","\x69\x6E\x74","\x69\x6E\x74\x65\x67\x65\x72","\x66\x6C\x6F\x61\x74","\x6E\x75\x6D\x62\x65\x72","\x63\x6F\x6E\x66\x69\x67\x49\x64","\x64\x65\x66\x61\x75\x6C\x74","\x6F\x70\x74\x69\x6F\x6E\x73","\x6C\x61\x62\x65\x6C\x50\x6F\x73","\x66\x69\x72\x73\x74\x43\x68\x69\x6C\x64","\x72\x69\x67\x68\x74","\x62\x65\x6C\x6F\x77","\x62\x72","\x61\x62\x6F\x76\x65","\x69\x6E\x73\x65\x72\x74\x42\x65\x66\x6F\x72\x65","\x63\x6F\x6E\x66\x69\x67\x5F\x76\x61\x72","\x5F","\x5F\x76\x61\x72","\x6C\x61\x62\x65\x6C","\x5F\x66\x69\x65\x6C\x64\x5F\x6C\x61\x62\x65\x6C","\x5F\x66\x69\x65\x6C\x64\x5F","\x66\x69\x65\x6C\x64\x5F\x6C\x61\x62\x65\x6C","\x74\x65\x78\x74\x61\x72\x65\x61","\x63\x6F\x6C\x73","\x72\x6F\x77\x73","\x72\x61\x64\x69\x6F\x5F\x6C\x61\x62\x65\x6C","\x69\x6E\x70\x75\x74","\x6F\x70\x74\x69\x6F\x6E","\x63\x68\x65\x63\x6B\x65\x64","\x73\x69\x7A\x65","\x73\x63\x72\x69\x70\x74","\x63\x6C\x69\x63\x6B","\x6F\x6E\x63\x6C\x69\x63\x6B","\x68\x69\x64\x64\x65\x6E","\x74\x65\x78\x74","\x73\x65\x6C\x65\x63\x74\x65\x64\x49\x6E\x64\x65\x78","\x46\x69\x65\x6C\x64\x20\x6C\x61\x62\x65\x6C\x65\x64\x20\x22","\x22\x20\x65\x78\x70\x65\x63\x74\x73\x20\x61","\x20\x70\x6F\x73\x69\x74\x69\x76\x65\x20","\x6E\x20","\x69\x6E\x74\x65\x67\x65\x72\x20\x76\x61\x6C\x75\x65","\x73\x75\x62\x73\x74\x72","\x63\x65\x69\x6C","\x2E","\x74\x65\x78\x74\x43\x6F\x6E\x74\x65\x6E\x74","\x6D\x69\x6E","\x20\x67\x72\x65\x61\x74\x65\x72\x20\x74\x68\x61\x6E\x20\x6F\x72\x20\x65\x71\x75\x61\x6C\x20\x74\x6F\x20","\x6D\x61\x78","\x20\x6C\x65\x73\x73\x20\x74\x68\x61\x6E\x20\x6F\x72\x20\x65\x71\x75\x61\x6C\x20\x74\x6F\x20"];function GM_configStruct(){if(arguments[_0x2769[0]]){GM_configInit(this,arguments);this[_0x2769[1]]()}}function GM_configInit(_0x2ce4x3,_0x2ce4x4){if( typeof _0x2ce4x3[_0x2769[2]]== _0x2769[3]){_0x2ce4x3[_0x2769[2]]= {};_0x2ce4x3[_0x2769[1]]= _0x2ce4x3[_0x2769[1]]|| function(){};_0x2ce4x3[_0x2769[4]]= _0x2ce4x3[_0x2769[4]]|| function(){};_0x2ce4x3[_0x2769[5]]= _0x2ce4x3[_0x2769[5]]|| function(){};_0x2ce4x3[_0x2769[6]]= _0x2ce4x3[_0x2769[6]]|| function(){};_0x2ce4x3[_0x2769[7]]= _0x2ce4x3[_0x2769[7]]|| function(){};_0x2ce4x3[_0x2769[8]]= false;_0x2ce4x3[_0x2769[9]]= _0x2769[10];_0x2ce4x3[_0x2769[11]]= {basic:[_0x2769[14],_0x2769[15],_0x2769[16],_0x2769[17],_0x2769[18],_0x2769[19],_0x2769[20],_0x2769[21],_0x2769[22]+ _0x2769[23],_0x2769[24],_0x2769[25],_0x2769[26],_0x2769[27],_0x2769[28],_0x2769[29],_0x2769[30],_0x2769[31]+ _0x2769[32]][_0x2769[13]](_0x2769[12])+ _0x2769[12],basicPrefix:_0x2769[33],stylish:_0x2769[34]}};if(_0x2ce4x4[_0x2769[0]]== 1&&  typeof _0x2ce4x4[0][_0x2769[35]]== _0x2769[36]&&  typeof _0x2ce4x4[0][_0x2769[37]]!= _0x2769[38]){var _0x2ce4x5=_0x2ce4x4[0]}else {var _0x2ce4x5={};for(var _0x2ce4x6=0,_0x2ce4x7=_0x2ce4x4[_0x2769[0]],_0x2ce4x8;_0x2ce4x6< _0x2ce4x7;++_0x2ce4x6){_0x2ce4x8= _0x2ce4x4[_0x2ce4x6];if( typeof _0x2ce4x8[_0x2769[37]]== _0x2769[38]){_0x2ce4x5[_0x2769[39]]= _0x2ce4x8;continue};switch( typeof _0x2ce4x8){case _0x2769[41]:for(var _0x2ce4x9 in _0x2ce4x8){if( typeof _0x2ce4x8[_0x2ce4x9]!= _0x2769[38]){_0x2ce4x5[_0x2769[2]]= _0x2ce4x8;break};if(!_0x2ce4x5[_0x2769[40]]){_0x2ce4x5[_0x2769[40]]= {}};_0x2ce4x5[_0x2769[40]][_0x2ce4x9]= _0x2ce4x8[_0x2ce4x9]};break;case _0x2769[38]:_0x2ce4x5[_0x2769[40]]= {onOpen:_0x2ce4x8};break;case _0x2769[36]:if(/\w+\s*\{\s*\w+\s*:\s*\w+[\s|\S]*\}/[_0x2769[42]](_0x2ce4x8)){_0x2ce4x5[_0x2769[11]]= _0x2ce4x8}else {_0x2ce4x5[_0x2769[9]]= _0x2ce4x8};break}}};if(_0x2ce4x5[_0x2769[35]]){_0x2ce4x3[_0x2769[35]]= _0x2ce4x5[_0x2769[35]]}else {if( typeof _0x2ce4x3[_0x2769[35]]== _0x2769[3]){_0x2ce4x3[_0x2769[35]]= _0x2769[33]}};if(_0x2ce4x5[_0x2769[9]]){_0x2ce4x3[_0x2769[9]]= _0x2ce4x5[_0x2769[9]]};if(_0x2ce4x5[_0x2769[11]]){_0x2ce4x3[_0x2769[11]][_0x2769[43]]= _0x2ce4x5[_0x2769[11]]};if(_0x2ce4x5[_0x2769[39]]){_0x2ce4x3[_0x2769[39]]= _0x2ce4x5[_0x2769[39]]};if(_0x2ce4x5[_0x2769[40]]){var _0x2ce4xa=_0x2ce4x5[_0x2769[40]];for(var _0x2ce4xb in _0x2ce4xa){_0x2ce4x3[_0x2769[44]+ _0x2ce4xb[_0x2769[46]](0)[_0x2769[45]]()+ _0x2ce4xb[_0x2769[47]](1)]= _0x2ce4xa[_0x2ce4xb]}};if(_0x2ce4x5[_0x2769[2]]){var _0x2ce4xc=_0x2ce4x3[_0x2769[48]](),_0x2ce4xd=_0x2ce4x5[_0x2769[2]],_0x2ce4xe=_0x2ce4x5[_0x2769[49]]|| {},_0x2ce4xf=_0x2ce4x3[_0x2769[35]];for(var _0x2ce4x10 in _0x2ce4xd){var _0x2ce4x11=_0x2ce4xd[_0x2ce4x10];if(_0x2ce4x11){_0x2ce4x3[_0x2769[2]][_0x2ce4x10]=  new GM_configField(_0x2ce4x11,_0x2ce4xc[_0x2ce4x10],_0x2ce4x10,_0x2ce4xe[_0x2ce4x11[_0x2769[50]]],_0x2ce4xf)}else {if(_0x2ce4x3[_0x2769[2]][_0x2ce4x10]){delete _0x2ce4x3[_0x2769[2]][_0x2ce4x10]}}}};if(_0x2ce4x3[_0x2769[35]]!= _0x2ce4x3[_0x2769[11]][_0x2769[51]]){_0x2ce4x3[_0x2769[11]][_0x2769[52]]= _0x2ce4x3[_0x2769[11]][_0x2769[52]][_0x2769[55]]( new RegExp(_0x2769[53]+ _0x2ce4x3[_0x2769[11]][_0x2769[51]],_0x2769[54]),_0x2769[53]+ _0x2ce4x3[_0x2769[35]]);_0x2ce4x3[_0x2769[11]][_0x2769[51]]= _0x2ce4x3[_0x2769[35]]}}GM_configStruct[_0x2769[56]]= {init:function(){GM_configInit(this,arguments);this[_0x2769[1]]()},open:function(){var _0x2ce4x12=document[_0x2769[57]](this[_0x2769[35]]);if(_0x2ce4x12&& (_0x2ce4x12[_0x2769[58]]== _0x2769[59]|| _0x2ce4x12[_0x2769[60]][_0x2769[0]]> 0)){return};var _0x2ce4x3=this;function _0x2ce4x13(_0x2ce4x14,_0x2ce4x15){var _0x2ce4x16=_0x2ce4x3[_0x2769[61]],_0x2ce4xd=_0x2ce4x3[_0x2769[2]],_0x2ce4xf=_0x2ce4x3[_0x2769[35]],_0x2ce4x17=_0x2ce4x16(_0x2769[62],{id:_0x2ce4xf+ _0x2769[63]});_0x2ce4x15[_0x2769[37]](_0x2ce4x16(_0x2769[64],{type:_0x2769[65],textContent:_0x2ce4x3[_0x2769[11]][_0x2769[52]]+ _0x2ce4x3[_0x2769[11]][_0x2769[43]]}));_0x2ce4x17[_0x2769[37]](_0x2ce4x16(_0x2769[62],{id:_0x2ce4xf+ _0x2769[66],className:_0x2769[67]},_0x2ce4x3[_0x2769[9]]));var _0x2ce4x18=_0x2ce4x17,_0x2ce4x19=0;for(var _0x2ce4x10 in _0x2ce4xd){var _0x2ce4x11=_0x2ce4xd[_0x2ce4x10],_0x2ce4x5=_0x2ce4x11[_0x2769[68]];if(_0x2ce4x5[_0x2769[69]]){_0x2ce4x18= _0x2ce4x17[_0x2769[37]](_0x2ce4x16(_0x2769[62],{className:_0x2769[70],id:_0x2ce4xf+ _0x2769[71]+ _0x2ce4x19}));if(Object[_0x2769[56]][_0x2769[73]][_0x2769[72]](_0x2ce4x5[_0x2769[69]])!== _0x2769[74]){_0x2ce4x5[_0x2769[69]]= [_0x2ce4x5[_0x2769[69]]]};if(_0x2ce4x5[_0x2769[69]][0]){_0x2ce4x18[_0x2769[37]](_0x2ce4x16(_0x2769[62],{className:_0x2769[75],id:_0x2ce4xf+ _0x2769[76]+ _0x2ce4x19},_0x2ce4x5[_0x2769[69]][0]))};if(_0x2ce4x5[_0x2769[69]][1]){_0x2ce4x18[_0x2769[37]](_0x2ce4x16(_0x2769[77],{className:_0x2769[78],id:_0x2ce4xf+ _0x2769[79]+ _0x2ce4x19},_0x2ce4x5[_0x2769[69]][1]))};++_0x2ce4x19};_0x2ce4x18[_0x2769[37]]((_0x2ce4x11[_0x2769[80]]= _0x2ce4x11[_0x2769[81]]()))};_0x2ce4x17[_0x2769[37]](_0x2ce4x16(_0x2769[62],{id:_0x2ce4xf+ _0x2769[82]},_0x2ce4x16(_0x2769[83],{id:_0x2ce4xf+ _0x2769[84],textContent:_0x2769[85],title:_0x2769[86],className:_0x2769[87],onclick:function(){_0x2ce4x3[_0x2769[88]]()}}),_0x2ce4x16(_0x2769[83],{id:_0x2ce4xf+ _0x2769[89],textContent:_0x2769[90],title:_0x2769[91],className:_0x2769[87],onclick:function(){_0x2ce4x3[_0x2769[92]]()}}),_0x2ce4x16(_0x2769[83],{id:_0x2ce4xf+ _0x2769[93],textContent:_0x2769[94],href:_0x2769[53],title:_0x2769[95],className:_0x2769[87],onclick:function(_0x2ce4xb){_0x2ce4xb[_0x2769[96]]();_0x2ce4x3[_0x2769[97]]()}})));_0x2ce4x14[_0x2769[37]](_0x2ce4x17);_0x2ce4x3[_0x2769[98]]();window[_0x2769[100]](_0x2769[99],_0x2ce4x3[_0x2769[98]],false);_0x2ce4x3[_0x2769[4]](_0x2ce4x3[_0x2769[39]][_0x2769[101]]|| _0x2ce4x3[_0x2769[39]][_0x2769[102]],_0x2ce4x3[_0x2769[39]][_0x2769[103]]|| window,_0x2ce4x3[_0x2769[39]]);window[_0x2769[100]](_0x2769[104],function(){_0x2ce4x3[_0x2769[92]]()},false);_0x2ce4x3[_0x2769[39]][_0x2769[64]][_0x2769[105]]= _0x2769[106];_0x2ce4x3[_0x2769[8]]= true}var _0x2ce4x1a=_0x2769[107]+ _0x2769[108]+ _0x2769[109]+ _0x2769[110];if(this[_0x2769[39]]){this[_0x2769[39]][_0x2769[35]]= this[_0x2769[35]];this[_0x2769[39]][_0x2769[111]](_0x2769[64],_0x2ce4x1a);_0x2ce4x13(this[_0x2769[39]],this[_0x2769[39]][_0x2769[102]][_0x2769[113]](_0x2769[112])[0])}else {document[_0x2769[115]][_0x2769[37]]((this[_0x2769[39]]= this[_0x2769[61]](_0x2769[114],{id:this[_0x2769[35]],style:_0x2ce4x1a})));this[_0x2769[39]][_0x2769[116]]= _0x2769[117];var _0x2ce4x1b=this;this[_0x2769[39]][_0x2769[100]](_0x2769[118],function(_0x2ce4xb){var _0x2ce4x1c=_0x2ce4x3[_0x2769[39]];if(_0x2ce4x1c[_0x2769[116]]&&  !_0x2ce4x1c[_0x2769[101]]){_0x2ce4x1c[_0x2769[116]]= _0x2769[34]}else {if(!_0x2ce4x1c[_0x2769[101]]){_0x2ce4x1b[_0x2769[120]](_0x2769[119])}};var _0x2ce4x14=_0x2ce4x1c[_0x2769[101]][_0x2769[113]](_0x2769[115])[0];_0x2ce4x14[_0x2769[35]]= _0x2ce4x3[_0x2769[35]];_0x2ce4x13(_0x2ce4x14,_0x2ce4x1c[_0x2769[101]][_0x2769[113]](_0x2769[112])[0])},false)}},save:function(){var _0x2ce4x1d=this[_0x2769[121]]();this[_0x2769[5]](_0x2ce4x1d)},close:function(){if(this[_0x2769[39]][_0x2769[101]]){this[_0x2769[122]](this[_0x2769[39]]);this[_0x2769[39]]= null}else {this[_0x2769[39]][_0x2769[123]]= _0x2769[34];this[_0x2769[39]][_0x2769[64]][_0x2769[105]]= _0x2769[124]};var _0x2ce4xd=this[_0x2769[2]];for(var _0x2ce4x10 in _0x2ce4xd){var _0x2ce4x11=_0x2ce4xd[_0x2ce4x10];_0x2ce4x11[_0x2769[80]]= null;_0x2ce4x11[_0x2769[125]]= null};this[_0x2769[6]]();this[_0x2769[8]]= false},set:function(_0x2ce4x1e,_0x2ce4x1f){this[_0x2769[2]][_0x2ce4x1e][_0x2769[126]]= _0x2ce4x1f;if(this[_0x2769[2]][_0x2ce4x1e][_0x2769[125]]){this[_0x2769[2]][_0x2ce4x1e][_0x2769[127]]()}},get:function(_0x2ce4x1e,_0x2ce4x20){var _0x2ce4x11=this[_0x2769[2]][_0x2ce4x1e],_0x2ce4x21=null;if(_0x2ce4x20&& _0x2ce4x11[_0x2769[125]]){_0x2ce4x21= _0x2ce4x11[_0x2769[128]]()};return _0x2ce4x21!= null?_0x2ce4x21:_0x2ce4x11[_0x2769[126]]},write:function(_0x2ce4x22,_0x2ce4x23){if(!_0x2ce4x23){var _0x2ce4x24={},_0x2ce4x1d={},_0x2ce4xd=this[_0x2769[2]];for(var _0x2ce4x10 in _0x2ce4xd){var _0x2ce4x11=_0x2ce4xd[_0x2ce4x10];var _0x2ce4x25=_0x2ce4x11[_0x2769[128]]();if(_0x2ce4x11[_0x2769[88]]){if(_0x2ce4x25!= null){_0x2ce4x24[_0x2ce4x10]= _0x2ce4x25;_0x2ce4x11[_0x2769[126]]= _0x2ce4x25}else {_0x2ce4x24[_0x2ce4x10]= _0x2ce4x11[_0x2769[126]]}}else {_0x2ce4x1d[_0x2ce4x10]= _0x2ce4x25}}};try{this[_0x2769[130]](_0x2ce4x22|| this[_0x2769[35]],this[_0x2769[129]](_0x2ce4x23|| _0x2ce4x24))}catch(e){this[_0x2769[120]](_0x2769[131])};return _0x2ce4x1d},read:function(_0x2ce4x22){try{var _0x2ce4x26=this[_0x2769[134]](this[_0x2769[133]](_0x2ce4x22|| this[_0x2769[35]],_0x2769[132]))}catch(e){this[_0x2769[120]](_0x2769[135]);var _0x2ce4x26={}};return _0x2ce4x26},reset:function(){var _0x2ce4xd=this[_0x2769[2]];for(var _0x2ce4x10 in _0x2ce4xd){_0x2ce4xd[_0x2ce4x10][_0x2769[97]]()};this[_0x2769[7]]()},create:function(){switch(arguments[_0x2769[0]]){case 1:var _0x2ce4x27=document[_0x2769[136]](arguments[0]);break;default:var _0x2ce4x27=document[_0x2769[137]](arguments[0]),_0x2ce4x28=arguments[1];for(var _0x2ce4x29 in _0x2ce4x28){if(_0x2ce4x29[_0x2769[138]](_0x2769[44])== 0){_0x2ce4x27[_0x2769[100]](_0x2ce4x29[_0x2769[139]](2),_0x2ce4x28[_0x2ce4x29],false)}else {if(_0x2769[142][_0x2769[138]](_0x2769[140]+ _0x2ce4x29[_0x2769[141]]())!=  -1){_0x2ce4x27[_0x2769[111]](_0x2ce4x29,_0x2ce4x28[_0x2ce4x29])}else {_0x2ce4x27[_0x2ce4x29]= _0x2ce4x28[_0x2ce4x29]}}};if( typeof arguments[2]== _0x2769[36]){_0x2ce4x27[_0x2769[123]]= arguments[2]}else {for(var _0x2ce4x6=2,_0x2ce4x2a=arguments[_0x2769[0]];_0x2ce4x6< _0x2ce4x2a;++_0x2ce4x6){_0x2ce4x27[_0x2769[37]](arguments[_0x2ce4x6])}}};return _0x2ce4x27},center:function(){var _0x2ce4x2b=this[_0x2769[39]];if(!_0x2ce4x2b){return};var _0x2ce4x2c=_0x2ce4x2b[_0x2769[64]],_0x2ce4x2d=_0x2ce4x2c[_0x2769[143]];if(_0x2ce4x2c[_0x2769[105]]== _0x2769[124]){_0x2ce4x2c[_0x2769[143]]= _0x2769[144]};_0x2ce4x2c[_0x2769[105]]= _0x2769[34];_0x2ce4x2c[_0x2769[145]]= Math[_0x2769[148]]((window[_0x2769[146]]/ 2)- (_0x2ce4x2b[_0x2769[147]]/ 2))+ _0x2769[149];_0x2ce4x2c[_0x2769[150]]= Math[_0x2769[148]]((window[_0x2769[151]]/ 2)- (_0x2ce4x2b[_0x2769[152]]/ 2))+ _0x2769[149];_0x2ce4x2c[_0x2769[143]]= _0x2769[153]},remove:function(_0x2ce4x2e){if(_0x2ce4x2e&& _0x2ce4x2e[_0x2769[154]]){_0x2ce4x2e[_0x2769[154]][_0x2769[155]](_0x2ce4x2e)}}};(function(){var _0x2ce4x2f= typeof GM_getValue!= _0x2769[3]&&  typeof GM_getValue(_0x2769[156],_0x2769[157])!= _0x2769[3],_0x2ce4x30,_0x2ce4x31,_0x2ce4x32,_0x2ce4x33;if(!_0x2ce4x2f){_0x2ce4x30= function(_0x2ce4x1e,_0x2ce4x25){return localStorage[_0x2769[158]](_0x2ce4x1e,_0x2ce4x25)};_0x2ce4x31= function(_0x2ce4x1e,_0x2ce4x34){var _0x2ce4x35=localStorage[_0x2769[159]](_0x2ce4x1e);return _0x2ce4x35== null?_0x2ce4x34:_0x2ce4x35};_0x2ce4x32= JSON[_0x2769[129]];_0x2ce4x33= JSON[_0x2769[160]]}else {_0x2ce4x30= GM_setValue;_0x2ce4x31= GM_getValue;_0x2ce4x32=  typeof JSON== _0x2769[3]?function(_0x2ce4x23){return _0x2ce4x23[_0x2769[161]]()}:JSON[_0x2769[129]];_0x2ce4x33=  typeof JSON== _0x2769[3]?function(_0x2ce4x36){return ( new Function(_0x2769[162]+ _0x2ce4x36+ _0x2769[163]))()}:JSON[_0x2769[160]]};GM_configStruct[_0x2769[56]][_0x2769[164]]= _0x2ce4x2f;GM_configStruct[_0x2769[56]][_0x2769[130]]= _0x2ce4x30;GM_configStruct[_0x2769[56]][_0x2769[133]]= _0x2ce4x31;GM_configStruct[_0x2769[56]][_0x2769[129]]= _0x2ce4x32;GM_configStruct[_0x2769[56]][_0x2769[134]]= _0x2ce4x33;GM_configStruct[_0x2769[56]][_0x2769[120]]= window[_0x2769[165]]?console[_0x2769[120]]:(_0x2ce4x2f&&  typeof GM_log!= _0x2769[3]?GM_log:(window[_0x2769[166]]?opera[_0x2769[167]]:function(){}))})();function GM_configDefaultValue(_0x2ce4x38,_0x2ce4x39){var _0x2ce4x25;if(_0x2ce4x38[_0x2769[138]](_0x2769[168])== 0){_0x2ce4x38= _0x2ce4x38[_0x2769[139]](9)};switch(_0x2ce4x38){case _0x2769[169]:;case _0x2769[170]:_0x2ce4x25= _0x2ce4x39[0];break;case _0x2769[171]:_0x2ce4x25= false;break;case _0x2769[172]:;case _0x2769[173]:;case _0x2769[174]:;case _0x2769[175]:_0x2ce4x25= 0;break;default:_0x2ce4x25= _0x2769[34]};return _0x2ce4x25}function GM_configField(_0x2ce4x5,_0x2ce4xc,_0x2ce4x10,_0x2ce4x3b,_0x2ce4xf){this[_0x2769[68]]= _0x2ce4x5;this[_0x2769[35]]= _0x2ce4x10;this[_0x2769[176]]= _0x2ce4xf;this[_0x2769[125]]= null;this[_0x2769[80]]= null;this[_0x2769[88]]=  typeof _0x2ce4x5[_0x2769[88]]== _0x2769[3]?true:_0x2ce4x5[_0x2769[88]];if(_0x2ce4x5[_0x2769[50]]== _0x2769[83]){this[_0x2769[88]]= false};this[_0x2769[177]]=  typeof _0x2ce4x5[_0x2769[177]]== _0x2769[3]?_0x2ce4x3b?_0x2ce4x3b[_0x2769[177]]:GM_configDefaultValue(_0x2ce4x5[_0x2769[50]],_0x2ce4x5[_0x2769[178]]):_0x2ce4x5[_0x2769[177]];this[_0x2769[126]]=  typeof _0x2ce4xc== _0x2769[3]?this[_0x2769[177]]:_0x2ce4xc;if(_0x2ce4x3b){this[_0x2769[81]]= _0x2ce4x3b[_0x2769[81]];this[_0x2769[128]]= _0x2ce4x3b[_0x2769[128]];this[_0x2769[97]]= _0x2ce4x3b[_0x2769[97]]}}GM_configField[_0x2769[56]]= {create:GM_configStruct[_0x2769[56]][_0x2769[61]],toNode:function(){var _0x2ce4x11=this[_0x2769[68]],_0x2ce4x25=this[_0x2769[126]],_0x2ce4x39=_0x2ce4x11[_0x2769[178]],_0x2ce4x38=_0x2ce4x11[_0x2769[50]],_0x2ce4x10=this[_0x2769[35]],_0x2ce4xf=this[_0x2769[176]],_0x2ce4x3c=_0x2ce4x11[_0x2769[179]],_0x2ce4x16=this[_0x2769[61]];function _0x2ce4x3d(_0x2ce4x3e,_0x2ce4x3f,_0x2ce4x40,_0x2ce4x41){if(!_0x2ce4x41){_0x2ce4x41= _0x2ce4x40[_0x2769[180]]};switch(_0x2ce4x3e){case _0x2769[181]:;case _0x2769[182]:if(_0x2ce4x3e== _0x2769[182]){_0x2ce4x40[_0x2769[37]](_0x2ce4x16(_0x2769[183],{}))};_0x2ce4x40[_0x2769[37]](_0x2ce4x3f);break;default:if(_0x2ce4x3e== _0x2769[184]){_0x2ce4x40[_0x2769[185]](_0x2ce4x16(_0x2769[183],{}),_0x2ce4x41)};_0x2ce4x40[_0x2769[185]](_0x2ce4x3f,_0x2ce4x41)}}var _0x2ce4x42=_0x2ce4x16(_0x2769[62],{className:_0x2769[186],id:_0x2ce4xf+ _0x2769[187]+ _0x2ce4x10+ _0x2769[188],title:_0x2ce4x11[_0x2769[9]]|| _0x2769[34]}),_0x2ce4x43;for(var _0x2ce4x6 in _0x2ce4x11){_0x2ce4x43= _0x2ce4x6;break};var _0x2ce4x44=_0x2ce4x11[_0x2769[189]]&& _0x2ce4x38!= _0x2769[83]?_0x2ce4x16(_0x2769[189],{id:_0x2ce4xf+ _0x2769[187]+ _0x2ce4x10+ _0x2769[190],for:_0x2ce4xf+ _0x2769[191]+ _0x2ce4x10,className:_0x2769[192]},_0x2ce4x11[_0x2769[189]]):null;switch(_0x2ce4x38){case _0x2769[193]:_0x2ce4x42[_0x2769[37]]((this[_0x2769[125]]= _0x2ce4x16(_0x2769[193],{innerHTML:_0x2ce4x25,id:_0x2ce4xf+ _0x2769[191]+ _0x2ce4x10,className:_0x2769[106],cols:(_0x2ce4x11[_0x2769[194]]?_0x2ce4x11[_0x2769[194]]:20),rows:(_0x2ce4x11[_0x2769[195]]?_0x2ce4x11[_0x2769[195]]:2)})));break;case _0x2769[169]:var _0x2ce4x45=_0x2ce4x16(_0x2769[62],{id:_0x2ce4xf+ _0x2769[191]+ _0x2ce4x10});this[_0x2769[125]]= _0x2ce4x45;for(var _0x2ce4x6=0,_0x2ce4x2a=_0x2ce4x39[_0x2769[0]];_0x2ce4x6< _0x2ce4x2a;++_0x2ce4x6){var _0x2ce4x46=_0x2ce4x16(_0x2769[189],{className:_0x2769[196]},_0x2ce4x39[_0x2ce4x6]);var _0x2ce4x47=_0x2ce4x45[_0x2769[37]](_0x2ce4x16(_0x2769[197],{value:_0x2ce4x39[_0x2ce4x6],type:_0x2769[169],name:_0x2ce4x10,checked:_0x2ce4x39[_0x2ce4x6]== _0x2ce4x25}));var _0x2ce4x48=_0x2ce4x3c&& (_0x2ce4x3c== _0x2769[150]|| _0x2ce4x3c== _0x2769[181])?_0x2ce4x3c:_0x2ce4x43== _0x2769[178]?_0x2769[150]:_0x2769[181];_0x2ce4x3d(_0x2ce4x48,_0x2ce4x46,_0x2ce4x45,_0x2ce4x47)};_0x2ce4x42[_0x2769[37]](_0x2ce4x45);break;case _0x2769[170]:var _0x2ce4x45=_0x2ce4x16(_0x2769[170],{id:_0x2ce4xf+ _0x2769[191]+ _0x2ce4x10});this[_0x2769[125]]= _0x2ce4x45;for(var _0x2ce4x6=0,_0x2ce4x2a=_0x2ce4x39[_0x2769[0]];_0x2ce4x6< _0x2ce4x2a;++_0x2ce4x6){var _0x2ce4x49=_0x2ce4x39[_0x2ce4x6];_0x2ce4x45[_0x2769[37]](_0x2ce4x16(_0x2769[198],{value:_0x2ce4x49,selected:_0x2ce4x49== _0x2ce4x25},_0x2ce4x49))};_0x2ce4x42[_0x2769[37]](_0x2ce4x45);break;default:var _0x2ce4x4a={id:_0x2ce4xf+ _0x2769[191]+ _0x2ce4x10,type:_0x2ce4x38,value:_0x2ce4x38== _0x2769[83]?_0x2ce4x11[_0x2769[189]]:_0x2ce4x25};switch(_0x2ce4x38){case _0x2769[171]:_0x2ce4x4a[_0x2769[199]]= _0x2ce4x25;break;case _0x2769[83]:_0x2ce4x4a[_0x2769[200]]= _0x2ce4x11[_0x2769[200]]?_0x2ce4x11[_0x2769[200]]:25;if(_0x2ce4x11[_0x2769[201]]){_0x2ce4x11[_0x2769[202]]= _0x2ce4x11[_0x2769[201]]};if(_0x2ce4x11[_0x2769[202]]){_0x2ce4x4a[_0x2769[203]]= _0x2ce4x11[_0x2769[202]]};break;case _0x2769[204]:break;default:_0x2ce4x4a[_0x2769[50]]= _0x2769[205];_0x2ce4x4a[_0x2769[200]]= _0x2ce4x11[_0x2769[200]]?_0x2ce4x11[_0x2769[200]]:25};_0x2ce4x42[_0x2769[37]]((this[_0x2769[125]]= _0x2ce4x16(_0x2769[197],_0x2ce4x4a)))};if(_0x2ce4x44){if(!_0x2ce4x3c){_0x2ce4x3c= _0x2ce4x43== _0x2769[189]|| _0x2ce4x38== _0x2769[169]?_0x2769[150]:_0x2769[181]};_0x2ce4x3d(_0x2ce4x3c,_0x2ce4x44,_0x2ce4x42)};return _0x2ce4x42},toValue:function(){var _0x2ce4x2b=this[_0x2769[125]],_0x2ce4x11=this[_0x2769[68]],_0x2ce4x38=_0x2ce4x11[_0x2769[50]],_0x2ce4x4b=false,_0x2ce4x26=null;if(!_0x2ce4x2b){return _0x2ce4x26};if(_0x2ce4x38[_0x2769[138]](_0x2769[168])== 0){_0x2ce4x38= _0x2ce4x38[_0x2769[139]](9);_0x2ce4x4b= true};switch(_0x2ce4x38){case _0x2769[171]:_0x2ce4x26= _0x2ce4x2b[_0x2769[199]];break;case _0x2769[170]:_0x2ce4x26= _0x2ce4x2b[_0x2ce4x2b[_0x2769[206]]][_0x2769[126]];break;case _0x2769[169]:var _0x2ce4x4c=_0x2ce4x2b[_0x2769[113]](_0x2769[197]);for(var _0x2ce4x6=0,_0x2ce4x2a=_0x2ce4x4c[_0x2769[0]];_0x2ce4x6< _0x2ce4x2a;++_0x2ce4x6){if(_0x2ce4x4c[_0x2ce4x6][_0x2769[199]]){_0x2ce4x26= _0x2ce4x4c[_0x2ce4x6][_0x2769[126]]}};break;case _0x2769[83]:break;case _0x2769[172]:;case _0x2769[173]:;case _0x2769[174]:;case _0x2769[175]:var _0x2ce4x4d=Number(_0x2ce4x2b[_0x2769[126]]);var _0x2ce4x4e=_0x2769[207]+ _0x2ce4x11[_0x2769[189]]+ _0x2769[208]+ (_0x2ce4x4b?_0x2769[209]:_0x2769[210])+ _0x2769[211];if(isNaN(_0x2ce4x4d)|| (_0x2ce4x38[_0x2769[212]](0,3)== _0x2769[172]&& Math[_0x2769[213]](_0x2ce4x4d)!= Math[_0x2769[148]](_0x2ce4x4d))|| (_0x2ce4x4b&& _0x2ce4x4d< 0)){alert(_0x2ce4x4e+ _0x2769[214]);return null};if(!this._checkNumberRange(_0x2ce4x4d,_0x2ce4x4e)){return null};_0x2ce4x26= _0x2ce4x4d;break;default:_0x2ce4x26= _0x2ce4x2b[_0x2769[126]];break};return _0x2ce4x26},reset:function(){var _0x2ce4x2b=this[_0x2769[125]],_0x2ce4x11=this[_0x2769[68]],_0x2ce4x38=_0x2ce4x11[_0x2769[50]];if(!_0x2ce4x2b){return};switch(_0x2ce4x38){case _0x2769[171]:_0x2ce4x2b[_0x2769[199]]= this[_0x2769[177]];break;case _0x2769[170]:for(var _0x2ce4x6=0,_0x2ce4x2a=_0x2ce4x2b[_0x2769[178]][_0x2769[0]];_0x2ce4x6< _0x2ce4x2a;++_0x2ce4x6){if(_0x2ce4x2b[_0x2769[178]][_0x2ce4x6][_0x2769[215]]== this[_0x2769[177]]){_0x2ce4x2b[_0x2769[206]]= _0x2ce4x6}};break;case _0x2769[169]:var _0x2ce4x4c=_0x2ce4x2b[_0x2769[113]](_0x2769[197]);for(var _0x2ce4x6=0,_0x2ce4x2a=_0x2ce4x4c[_0x2769[0]];_0x2ce4x6< _0x2ce4x2a;++_0x2ce4x6){if(_0x2ce4x4c[_0x2ce4x6][_0x2769[126]]== this[_0x2769[177]]){_0x2ce4x4c[_0x2ce4x6][_0x2769[199]]= true}};break;case _0x2769[83]:break;default:_0x2ce4x2b[_0x2769[126]]= this[_0x2769[177]];break}},remove:function(_0x2ce4x2e){GM_configStruct[_0x2769[56]][_0x2769[122]](_0x2ce4x2e|| this[_0x2769[80]]);this[_0x2769[80]]= null;this[_0x2769[125]]= null},reload:function(){var _0x2ce4x4f=this[_0x2769[80]];if(_0x2ce4x4f){var _0x2ce4x50=_0x2ce4x4f[_0x2769[154]];_0x2ce4x50[_0x2769[185]]((this[_0x2769[80]]= this[_0x2769[81]]()),_0x2ce4x4f);this[_0x2769[122]](_0x2ce4x4f)}},_checkNumberRange:function(_0x2ce4x4d,_0x2ce4x4e){var _0x2ce4x11=this[_0x2769[68]];if( typeof _0x2ce4x11[_0x2769[216]]== _0x2769[175]&& _0x2ce4x4d< _0x2ce4x11[_0x2769[216]]){alert(_0x2ce4x4e+ _0x2769[217]+ _0x2ce4x11[_0x2769[216]]+ _0x2769[214]);return null};if( typeof _0x2ce4x11[_0x2769[218]]== _0x2769[175]&& _0x2ce4x4d> _0x2ce4x11[_0x2769[218]]){alert(_0x2ce4x4e+ _0x2769[219]+ _0x2ce4x11[_0x2769[218]]+ _0x2769[214]);return null};return true}};var GM_config= new GM_configStruct()
+ /*
+    Copyright 2009+, GM_config Contributors (https://github.com/sizzlemctwizzle/GM_config)
+    
+    GM_config Collaborators/Contributors:
+        Mike Medley <medleymind@gmail.com>
+        Joe Simmons
+        Izzy Soft
+        Marti Martz
+        Adam Thompson-Sharpe
+    
+    GM_config is distributed under the terms of the GNU Lesser General Public License.
+    
+        GM_config is free software: you can redistribute it and/or modify
+        it under the terms of the GNU Lesser General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+    
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU Lesser General Public License for more details.
+    
+        You should have received a copy of the GNU Lesser General Public License
+        along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+    
+    // ==UserScript==
+    // @exclude       *
+    // @author        Mike Medley <medleymind@gmail.com> (https://github.com/sizzlemctwizzle/GM_config)
+    // @icon          https://raw.githubusercontent.com/sizzlemctwizzle/GM_config/master/gm_config_icon_large.png
+    
+    // ==UserLibrary==
+    // @name          GM_config
+    // @description   A lightweight, reusable, cross-browser graphical settings framework for inclusion in user scripts.
+    // @copyright     2009+, Mike Medley (https://github.com/sizzlemctwizzle)
+    // @license       LGPL-3.0-or-later; https://raw.githubusercontent.com/sizzlemctwizzle/GM_config/master/LICENSE
+    
+    // @homepageURL   https://openuserjs.org/libs/sizzle/GM_config
+    // @homepageURL   https://github.com/sizzlemctwizzle/GM_config
+    // @supportURL    https://github.com/sizzlemctwizzle/GM_config/issues
+    
+    // ==/UserScript==
+    
+    // ==/UserLibrary==
+    
+    
+    // The GM_config constructor
+    function GM_configStruct() {
+      // call init() if settings were passed to constructor
+      if (arguments.length) {
+        GM_configInit(this, arguments);
+        this.onInit();
+      }
+    }
+    
+    // This is the initializer function
+    function GM_configInit(config, args) {
+      // Initialize instance variables
+      if (typeof config.fields == "undefined") {
+        config.fields = {};
+        config.onInit = config.onInit || function() {};
+        config.onOpen = config.onOpen || function() {};
+        config.onSave = config.onSave || function() {};
+        config.onClose = config.onClose || function() {};
+        config.onReset = config.onReset || function() {};
+        config.isOpen = false;
+        config.title = 'User Script Settings';
+        config.css = {
+            basic: [
+              "#GM_config * { font-family: arial,tahoma,myriad pro,sans-serif; }",
+              "#GM_config { background: #FFF; }",
+              "#GM_config input[type='radio'] { margin-right: 8px; }",
+              "#GM_config .indent40 { margin-left: 40%; }",
+              "#GM_config .field_label { font-size: 12px; font-weight: bold; margin-right: 6px; }",
+              "#GM_config .radio_label { font-size: 12px; }",
+              "#GM_config .block { display: block; }",
+              "#GM_config .saveclose_buttons { margin: 16px 10px 10px; padding: 2px 12px; }",
+              "#GM_config .reset, #GM_config .reset a," +
+                " #GM_config_buttons_holder { color: #000; text-align: right; }",
+              "#GM_config .config_header { font-size: 20pt; margin: 0; }",
+              "#GM_config .config_desc, #GM_config .section_desc, #GM_config .reset { font-size: 9pt; }",
+              "#GM_config .center { text-align: center; }",
+              "#GM_config .section_header_holder { margin-top: 8px; }",
+              "#GM_config .config_var { margin: 0 0 4px; }",
+              "#GM_config .section_header { background: #414141; border: 1px solid #000; color: #FFF;",
+              " font-size: 13pt; margin: 0; }",
+              "#GM_config .section_desc { background: #EFEFEF; border: 1px solid #CCC; color: #575757;" +
+                " font-size: 9pt; margin: 0 0 6px; }"
+              ].join('\n') + '\n',
+            basicPrefix: "GM_config",
+            stylish: ""
+          };
+      }
+    
+      if (args.length == 1 &&
+        typeof args[0].id == "string" &&
+        typeof args[0].appendChild != "function") var settings = args[0];
+      else {
+        // Provide backwards-compatibility with argument style intialization
+        var settings = {};
+    
+        // loop through GM_config.init() arguments
+        for (var i = 0, l = args.length, arg; i < l; ++i) {
+          arg = args[i];
+    
+          // An element to use as the config window
+          if (typeof arg.appendChild == "function") {
+            settings.frame = arg;
+            continue;
+          }
+    
+          switch (typeof arg) {
+            case 'object':
+              for (var j in arg) { // could be a callback functions or settings object
+                if (typeof arg[j] != "function") { // we are in the settings object
+                  settings.fields = arg; // store settings object
+                  break; // leave the loop
+                } // otherwise it must be a callback function
+                if (!settings.events) settings.events = {};
+                settings.events[j] = arg[j];
+              }
+              break;
+            case 'function': // passing a bare function is set to open callback
+              settings.events = {onOpen: arg};
+              break;
+            case 'string': // could be custom CSS or the title string
+              if (/\w+\s*\{\s*\w+\s*:\s*\w+[\s|\S]*\}/.test(arg))
+                settings.css = arg;
+              else
+                settings.title = arg;
+              break;
+          }
+        }
+      }
+    
+      /* Initialize everything using the new settings object */
+      // Set the id
+      if (settings.id) config.id = settings.id;
+      else if (typeof config.id == "undefined") config.id = 'GM_config';
+    
+      // Set the title
+      if (settings.title) config.title = settings.title;
+    
+      // Set the custom css
+      if (settings.css) config.css.stylish = settings.css;
+    
+      // Set the frame
+      if (settings.frame) config.frame = settings.frame;
+    
+      // Set the event callbacks
+      if (settings.events) {
+        var events = settings.events;
+        for (var e in events)
+          config["on" + e.charAt(0).toUpperCase() + e.slice(1)] = events[e];
+      }
+    
+      // Create the fields
+      if (settings.fields) {
+        var stored = config.read(), // read the stored settings
+            fields = settings.fields,
+            customTypes = settings.types || {},
+            configId = config.id;
+    
+        for (var id in fields) {
+          var field = fields[id];
+    
+          // for each field definition create a field object
+          if (field)
+            config.fields[id] = new GM_configField(field, stored[id], id,
+              customTypes[field.type], configId);
+          else if (config.fields[id]) delete config.fields[id];
+        }
+      }
+    
+      // If the id has changed we must modify the default style
+      if (config.id != config.css.basicPrefix) {
+        config.css.basic = config.css.basic.replace(
+          new RegExp('#' + config.css.basicPrefix, 'gm'), '#' + config.id);
+        config.css.basicPrefix = config.id;
+      }
+    }
+    
+    GM_configStruct.prototype = {
+      // Support old method of initalizing
+      init: function() {
+        GM_configInit(this, arguments);
+        this.onInit();
+      },
+    
+      // call GM_config.open() from your script to open the menu
+      open: function () {
+        // Die if the menu is already open on this page
+        // You can have multiple instances but you can't open the same instance twice
+        var match = document.getElementById(this.id);
+        if (match && (match.tagName == "IFRAME" || match.childNodes.length > 0)) return;
+    
+        // Sometimes "this" gets overwritten so create an alias
+        var config = this;
+    
+        // Function to build the mighty config window :)
+        function buildConfigWin (body, head) {
+          var create = config.create,
+              fields = config.fields,
+              configId = config.id,
+              bodyWrapper = create('div', {id: configId + '_wrapper'});
+    
+          // Append the style which is our default style plus the user style
+          head.appendChild(
+            create('style', {
+            type: 'text/css',
+            textContent: config.css.basic + config.css.stylish
+          }));
+    
+          // Add header and title
+          bodyWrapper.appendChild(create('div', {
+            id: configId + '_header',
+            className: 'config_header block center'
+          }, config.title));
+    
+          // Append elements
+          var section = bodyWrapper,
+              secNum = 0; // Section count
+    
+          // loop through fields
+          for (var id in fields) {
+            var field = fields[id],
+                settings = field.settings;
+    
+            if (settings.section) { // the start of a new section
+              section = bodyWrapper.appendChild(create('div', {
+                  className: 'section_header_holder',
+                  id: configId + '_section_' + secNum
+                }));
+    
+              if (Object.prototype.toString.call(settings.section) !== '[object Array]')
+                settings.section = [settings.section];
+    
+              if (settings.section[0])
+                section.appendChild(create('div', {
+                  className: 'section_header center',
+                  id: configId + '_section_header_' + secNum
+                }, settings.section[0]));
+    
+              if (settings.section[1])
+                section.appendChild(create('p', {
+                  className: 'section_desc center',
+                  id: configId + '_section_desc_' + secNum
+                }, settings.section[1]));
+              ++secNum;
+            }
+    
+            // Create field elements and append to current section
+            section.appendChild((field.wrapper = field.toNode()));
+          }
+    
+          // Add save and close buttons
+          bodyWrapper.appendChild(create('div',
+            {id: configId + '_buttons_holder'},
+    
+            create('button', {
+              id: configId + '_saveBtn',
+              textContent: 'Save',
+              title: 'Save settings',
+              className: 'saveclose_buttons',
+              onclick: function () { config.save() }
+            }),
+    
+            create('button', {
+              id: configId + '_closeBtn',
+              textContent: 'Close',
+              title: 'Close window',
+              className: 'saveclose_buttons',
+              onclick: function () { config.close() }
+            }),
+    
+            create('button',{
+                id: configId + '_resetLink',
+                textContent: 'Defaults',
+                href: '#',
+                title: 'Reset fields to default values',
+                className: 'saveclose_buttons',
+                onclick: function(e) { e.preventDefault(); config.reset() }
+              })
+          ));
+    
+          body.appendChild(bodyWrapper); // Paint everything to window at once
+          config.center(); // Show and center iframe
+          window.addEventListener('resize', config.center, false); // Center frame on resize
+    
+          // Call the open() callback function
+          config.onOpen(config.frame.contentDocument || config.frame.ownerDocument,
+                        config.frame.contentWindow || window,
+                        config.frame);
+    
+          // Close frame on window close
+          window.addEventListener('beforeunload', function () {
+              config.close();
+          }, false);
+    
+          // Now that everything is loaded, make it visible
+          config.frame.style.display = "block";
+          config.isOpen = true;
+        }
+    
+        // Change this in the onOpen callback using this.frame.setAttribute('style', '')
+        var defaultStyle = 'bottom: auto; border: 1px solid #000; display: none; height: 75%;'
+          + ' left: 0; margin: 0; max-height: 80%; max-width: 50%; opacity: 0;'
+          + ' overflow: 90%; padding: 0; position: fixed; right: auto; top: 0;'
+          + ' width: 75%; z-index: 9999; border-radius: 3px;';
+    
+        // Either use the element passed to init() or create an iframe
+        if (this.frame) {
+          this.frame.id = this.id; // Allows for prefixing styles with the config id
+          this.frame.setAttribute('style', defaultStyle);
+          buildConfigWin(this.frame, this.frame.ownerDocument.getElementsByTagName('head')[0]);
+        } else {
+          // Create frame
+          document.body.appendChild((this.frame = this.create('iframe', {
+            id: this.id,
+            style: defaultStyle
+          })));
+    
+          // In WebKit src can't be set until it is added to the page
+          this.frame.src = 'about:blank';
+          // we wait for the iframe to load before we can modify it
+          var that = this;
+          this.frame.addEventListener('load', function(e) {
+              var frame = config.frame;
+              if (frame.src && !frame.contentDocument) {
+                // Some agents need this as an empty string for newer context implementations
+                frame.src = "";
+              } else if (!frame.contentDocument) {
+                that.log("GM_config failed to initialize default settings dialog node!");
+              }
+              var body = frame.contentDocument.getElementsByTagName('body')[0];
+              body.id = config.id; // Allows for prefixing styles with the config id
+              buildConfigWin(body, frame.contentDocument.getElementsByTagName('head')[0]);
+          }, false);
+        }
+      },
+    
+      save: function () {
+        var forgotten = this.write();
+        this.onSave(forgotten); // Call the save() callback function
+      },
+    
+      close: function() {
+        // If frame is an iframe then remove it
+        if (this.frame.contentDocument) {
+          this.remove(this.frame);
+          this.frame = null;
+        } else { // else wipe its content
+          this.frame.innerHTML = "";
+          this.frame.style.display = "none";
+        }
+    
+        // Null out all the fields so we don't leak memory
+        var fields = this.fields;
+        for (var id in fields) {
+          var field = fields[id];
+          field.wrapper = null;
+          field.node = null;
+        }
+    
+        this.onClose(); //  Call the close() callback function
+        this.isOpen = false;
+      },
+    
+      set: function (name, val) {
+        this.fields[name].value = val;
+    
+        if (this.fields[name].node) {
+          this.fields[name].reload();
+        }
+      },
+    
+      get: function (name, getLive) {
+        var field = this.fields[name],
+            fieldVal = null;
+    
+        if (getLive && field.node) {
+          fieldVal = field.toValue();
+        }
+    
+        return fieldVal != null ? fieldVal : field.value;
+      },
+    
+      write: function (store, obj) {
+        if (!obj) {
+          var values = {},
+              forgotten = {},
+              fields = this.fields;
+    
+          for (var id in fields) {
+            var field = fields[id];
+            var value = field.toValue();
+    
+            if (field.save) {
+              if (value != null) {
+                values[id] = value;
+                field.value = value;
+              } else
+                values[id] = field.value;
+            } else
+              forgotten[id] = value;
+          }
+        }
+        try {
+          this.setValue(store || this.id, this.stringify(obj || values));
+        } catch(e) {
+          this.log("GM_config failed to save settings!");
+        }
+    
+        return forgotten;
+      },
+    
+      read: function (store) {
+        try {
+          var rval = this.parser(this.getValue(store || this.id, '{}'));
+        } catch(e) {
+          this.log("GM_config failed to read saved settings!");
+          var rval = {};
+        }
+        return rval;
+      },
+    
+      reset: function () {
+        var fields = this.fields;
+    
+        // Reset all the fields
+        for (var id in fields) fields[id].reset();
+    
+        this.onReset(); // Call the reset() callback function
+      },
+    
+      create: function () {
+        switch(arguments.length) {
+          case 1:
+            var A = document.createTextNode(arguments[0]);
+            break;
+          default:
+            var A = document.createElement(arguments[0]),
+                B = arguments[1];
+            for (var b in B) {
+              if (b.indexOf("on") == 0)
+                A.addEventListener(b.substring(2), B[b], false);
+              else if (",style,accesskey,id,name,src,href,which,for".indexOf("," +
+                       b.toLowerCase()) != -1)
+                A.setAttribute(b, B[b]);
+              else
+                A[b] = B[b];
+            }
+            if (typeof arguments[2] == "string")
+              A.innerHTML = arguments[2];
+            else
+              for (var i = 2, len = arguments.length; i < len; ++i)
+                A.appendChild(arguments[i]);
+        }
+        return A;
+      },
+    
+      center: function () {
+        var node = this.frame;
+        if (!node) return;
+        var style = node.style,
+            beforeOpacity = style.opacity;
+        if (style.display == 'none') style.opacity = '0';
+        style.display = '';
+        style.top = Math.floor((window.innerHeight / 2) - (node.offsetHeight / 2)) + 'px';
+        style.left = Math.floor((window.innerWidth / 2) - (node.offsetWidth / 2)) + 'px';
+        style.opacity = '1';
+      },
+    
+      remove: function (el) {
+        if (el && el.parentNode) el.parentNode.removeChild(el);
+      }
+    };
+    
+    // Define a bunch of API stuff
+    (function() {
+      var isGM = typeof GM_getValue != 'undefined' &&
+                 typeof GM_getValue('a', 'b') != 'undefined',
+          setValue, getValue, stringify, parser;
+    
+      // Define value storing and reading API
+      if (!isGM) {
+        setValue = function (name, value) {
+          return localStorage.setItem(name, value);
+        };
+        getValue = function(name, def){
+          var s = localStorage.getItem(name);
+          return s == null ? def : s
+        };
+    
+        // We only support JSON parser outside GM
+        stringify = JSON.stringify;
+        parser = JSON.parse;
+      } else {
+        setValue = GM_setValue;
+        getValue = GM_getValue;
+        stringify = typeof JSON == "undefined" ?
+          function(obj) {
+            return obj.toSource();
+        } : JSON.stringify;
+        parser = typeof JSON == "undefined" ?
+          function(jsonData) {
+            return (new Function('return ' + jsonData + ';'))();
+        } : JSON.parse;
+      }
+    
+      GM_configStruct.prototype.isGM = isGM;
+      GM_configStruct.prototype.setValue = setValue;
+      GM_configStruct.prototype.getValue = getValue;
+      GM_configStruct.prototype.stringify = stringify;
+      GM_configStruct.prototype.parser = parser;
+      GM_configStruct.prototype.log =  window.console ?
+        console.log : (isGM && typeof GM_log != 'undefined' ?
+          GM_log : (window.opera ?
+            opera.postError : function(){ /* no logging */ }
+      ));
+    })();
+    
+    function GM_configDefaultValue(type, options) {
+      var value;
+    
+      if (type.indexOf('unsigned ') == 0)
+        type = type.substring(9);
+    
+      switch (type) {
+        case 'radio': case 'select':
+          value = options[0];
+          break;
+        case 'checkbox':
+          value = false;
+          break;
+        case 'int': case 'integer':
+        case 'float': case 'number':
+          value = 0;
+          break;
+        default:
+          value = '';
+      }
+    
+      return value;
+    }
+    
+    function GM_configField(settings, stored, id, customType, configId) {
+      // Store the field's settings
+      this.settings = settings;
+      this.id = id;
+      this.configId = configId;
+      this.node = null;
+      this.wrapper = null;
+      this.save = typeof settings.save == "undefined" ? true : settings.save;
+    
+      // Buttons are static and don't have a stored value
+      if (settings.type == "button") this.save = false;
+    
+      // if a default value wasn't passed through init() then
+      //   if the type is custom use its default value
+      //   else use default value for type
+      // else use the default value passed through init()
+      this['default'] = typeof settings['default'] == "undefined" ?
+        customType ?
+          customType['default']
+          : GM_configDefaultValue(settings.type, settings.options)
+        : settings['default'];
+    
+      // Store the field's value
+      this.value = typeof stored == "undefined" ? this['default'] : stored;
+    
+      // Setup methods for a custom type
+      if (customType) {
+        this.toNode = customType.toNode;
+        this.toValue = customType.toValue;
+        this.reset = customType.reset;
+      }
+    }
+    
+    GM_configField.prototype = {
+      create: GM_configStruct.prototype.create,
+    
+      toNode: function() {
+        var field = this.settings,
+            value = this.value,
+            options = field.options,
+            type = field.type,
+            id = this.id,
+            configId = this.configId,
+            labelPos = field.labelPos,
+            create = this.create;
+    
+        function addLabel(pos, labelEl, parentNode, beforeEl) {
+          if (!beforeEl) beforeEl = parentNode.firstChild;
+          switch (pos) {
+            case 'right': case 'below':
+              if (pos == 'below')
+                parentNode.appendChild(create('br', {}));
+              parentNode.appendChild(labelEl);
+              break;
+            default:
+              if (pos == 'above')
+                parentNode.insertBefore(create('br', {}), beforeEl);
+              parentNode.insertBefore(labelEl, beforeEl);
+          }
+        }
+    
+        var retNode = create('div', { className: 'config_var',
+              id: configId + '_' + id + '_var',
+              title: field.title || '' }),
+            firstProp;
+    
+        // Retrieve the first prop
+        for (var i in field) { firstProp = i; break; }
+    
+        var label = field.label && type != "button" ?
+          create('label', {
+            id: configId + '_' + id + '_field_label',
+            for: configId + '_field_' + id,
+            className: 'field_label'
+          }, field.label) : null;
+    
+        switch (type) {
+          case 'textarea':
+            retNode.appendChild((this.node = create('textarea', {
+              innerHTML: value,
+              id: configId + '_field_' + id,
+              className: 'block',
+              cols: (field.cols ? field.cols : 20),
+              rows: (field.rows ? field.rows : 2)
+            })));
+            break;
+          case 'radio':
+            var wrap = create('div', {
+              id: configId + '_field_' + id
+            });
+            this.node = wrap;
+    
+            for (var i = 0, len = options.length; i < len; ++i) {
+              var radLabel = create('label', {
+                className: 'radio_label'
+              }, options[i]);
+    
+              var rad = wrap.appendChild(create('input', {
+                value: options[i],
+                type: 'radio',
+                name: id,
+                checked: options[i] == value
+              }));
+    
+              var radLabelPos = labelPos &&
+                (labelPos == 'left' || labelPos == 'right') ?
+                labelPos : firstProp == 'options' ? 'left' : 'right';
+    
+              addLabel(radLabelPos, radLabel, wrap, rad);
+            }
+    
+            retNode.appendChild(wrap);
+            break;
+          case 'select':
+            var wrap = create('select', {
+              id: configId + '_field_' + id
+            });
+            this.node = wrap;
+    
+            for (var i = 0, len = options.length; i < len; ++i) {
+              var option = options[i];
+              wrap.appendChild(create('option', {
+                value: option,
+                selected: option == value
+              }, option));
+            }
+    
+            retNode.appendChild(wrap);
+            break;
+          default: // fields using input elements
+            var props = {
+              id: configId + '_field_' + id,
+              type: type,
+              value: type == 'button' ? field.label : value
+            };
+    
+            switch (type) {
+              case 'checkbox':
+                props.checked = value;
+                break;
+              case 'button':
+                props.size = field.size ? field.size : 25;
+                if (field.script) field.click = field.script;
+                if (field.click) props.onclick = field.click;
+                break;
+              case 'hidden':
+                break;
+              default:
+                // type = text, int, or float
+                props.type = 'text';
+                props.size = field.size ? field.size : 25;
+            }
+    
+            retNode.appendChild((this.node = create('input', props)));
+        }
+    
+        if (label) {
+          // If the label is passed first, insert it before the field
+          // else insert it after
+          if (!labelPos)
+            labelPos = firstProp == "label" || type == "radio" ?
+              "left" : "right";
+    
+          addLabel(labelPos, label, retNode);
+        }
+    
+        return retNode;
+      },
+    
+      toValue: function() {
+        var node = this.node,
+            field = this.settings,
+            type = field.type,
+            unsigned = false,
+            rval = null;
+    
+        if (!node) return rval;
+    
+        if (type.indexOf('unsigned ') == 0) {
+          type = type.substring(9);
+          unsigned = true;
+        }
+    
+        switch (type) {
+          case 'checkbox':
+            rval = node.checked;
+            break;
+          case 'select':
+            rval = node[node.selectedIndex].value;
+            break;
+          case 'radio':
+            var radios = node.getElementsByTagName('input');
+            for (var i = 0, len = radios.length; i < len; ++i)
+              if (radios[i].checked)
+                rval = radios[i].value;
+            break;
+          case 'button':
+            break;
+          case 'int': case 'integer':
+          case 'float': case 'number':
+            var num = Number(node.value);
+            var warn = 'Field labeled "' + field.label + '" expects a' +
+              (unsigned ? ' positive ' : 'n ') + 'integer value';
+    
+            if (isNaN(num) || (type.substr(0, 3) == 'int' &&
+                Math.ceil(num) != Math.floor(num)) ||
+                (unsigned && num < 0)) {
+              alert(warn + '.');
+              return null;
+            }
+    
+            if (!this._checkNumberRange(num, warn))
+              return null;
+            rval = num;
+            break;
+          default:
+            rval = node.value;
+            break;
+        }
+    
+        return rval; // value read successfully
+      },
+    
+      reset: function() {
+        var node = this.node,
+            field = this.settings,
+            type = field.type;
+    
+        if (!node) return;
+    
+        switch (type) {
+          case 'checkbox':
+            node.checked = this['default'];
+            break;
+          case 'select':
+            for (var i = 0, len = node.options.length; i < len; ++i)
+              if (node.options[i].textContent == this['default'])
+                node.selectedIndex = i;
+            break;
+          case 'radio':
+            var radios = node.getElementsByTagName('input');
+            for (var i = 0, len = radios.length; i < len; ++i)
+              if (radios[i].value == this['default'])
+                radios[i].checked = true;
+            break;
+          case 'button' :
+            break;
+          default:
+            node.value = this['default'];
+            break;
+          }
+      },
+    
+      remove: function(el) {
+        GM_configStruct.prototype.remove(el || this.wrapper);
+        this.wrapper = null;
+        this.node = null;
+      },
+    
+      reload: function() {
+        var wrapper = this.wrapper;
+        if (wrapper) {
+          var fieldParent = wrapper.parentNode;
+          fieldParent.insertBefore((this.wrapper = this.toNode()), wrapper);
+          this.remove(wrapper);
+        }
+      },
+    
+      _checkNumberRange: function(num, warn) {
+        var field = this.settings;
+        if (typeof field.min == "number" && num < field.min) {
+          alert(warn + ' greater than or equal to ' + field.min + '.');
+          return null;
+        }
+    
+        if (typeof field.max == "number" && num > field.max) {
+          alert(warn + ' less than or equal to ' + field.max + '.');
+          return null;
+        }
+        return true;
+      }
+    };
+    
+    // Create default instance of GM_config
+    var GM_config = new GM_configStruct();
